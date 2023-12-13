@@ -1,0 +1,99 @@
+.Register-field{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Register-background{
+    background: #fff;
+    min-height: 600px;
+    min-width: 400px;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    z-index: 5;
+    display: flex;
+    flex-flow:column;
+    box-shadow: 0 0 5px 0 rgba(22, 22, 22, 0.1);
+}
+.Register-title{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    border-top: 5px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+}
+.Register-title span{
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.Register-form{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100%;
+    flex-grow: 1;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.Register-form .field{
+    margin: 50px 0;
+    text-align: center;
+}
+.Register-form .field label{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+.Register-form .field input{
+    font-family: Quicksand;
+    border: 0px;
+    padding: 20px 60px;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(50, 50, 50, 0.2);
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.7));
+    backdrop-filter: blur(10px);
+    color: #111;
+    font-size: 16px;
+}
+::placeholder{
+    color: #666;
+    letter-spacing: 2px;
+  }
+.Register-field .button-field{
+    display: flex;
+    flex-flow: column;
+}
+.Register-form .field button{
+    font-family: Quicksand;
+    flex-grow: 1;
+    border: 0px;
+    padding: 15px 50px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    transition: 1s;
+    box-shadow: 0 2px 5px 0 rgba(50, 50, 50, 0.2);
+    font-size: 16px;
+    border-radius: 10px;
+}
+.Register-form .field button:hover{
+    transform: translateY(-3px);
+    transition: 1s;
+}
+.Register-form .button-login{
+    background: linear-gradient(to right bottom,
+    rgb(223, 55, 153),
+    rgb(202, 44, 128));
+    color: #fff;
+}

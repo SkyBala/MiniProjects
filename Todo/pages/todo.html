@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Font Awesome cdn css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/todo.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <title>To Do List</title>
+</head>
+<body>
+
+    <header class="headerLoggedOut">               
+                <nav>
+                    <ul>
+                        <li><a class="headerLink" href="../logIn.html">Log Out</a></li>
+                    </ul>
+                </nav>
+    </header>
+    <h1 style="color: white; text-align: center;">My To Do List</h1>
+   
+<div class="login-field">
+    <div class="login-background">
+      
+        <form action="">
+            <input type="text" class="todo-input" placeholder="name">
+            <input type="text" class="bodyInput-input" placeholder="body">
+            <button class="todo-button" type="submit">
+                <i class="fas fa-plus-circle fa-lg"></i>
+            </button>
+           
+            <div class="select">
+                <select name="todos" class="filter-todo">
+                    <option value="all">все</option>
+                    <option value="completed">законченые</option>
+                    <option value="incomplete">незаконченые</option>
+                </select>
+            </div>
+        </form>
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
+        <div class="theme-btn-container"></div>
+      </div>
+    </div>
+  </div>
+  <span class="square square-tl"></span>
+  <span class="square square-tr"></span>
+  <span class="square square-bl"></span>
+  <span class="square square-br"></span>
+  <span class="star star1"></span>
+  <span class="star star2"></span>
+    
+   
+
+    <script src="../js/todo.js"></script>
+
+    
+</body>
+</html>
+
+
